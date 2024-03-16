@@ -11,30 +11,37 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-input[type="file"] {
-    display: none;
+label, input, button {
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
 }
 
-#uploadBtn {
-    margin-bottom: 20px;
+#solution {
+    margin-top: 20px;
 }
 
-video {
-    margin-bottom: 20px;
-}
-
-canvas {
-    display: none;
-}
-
-#errorMsg {
+.error {
     color: red;
     font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
 }

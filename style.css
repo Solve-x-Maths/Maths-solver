@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-header, footer {
+header {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
@@ -15,36 +15,13 @@ main {
   padding: 20px;
 }
 
-.equation-input {
-  margin-bottom: 20px;
-}
-
-.solution-container {
+.chat-input {
   margin-top: 20px;
 }
 
-input[type="text"], button, input[type="file"] {
-  margin-right: 10px;
-  width: 100%;
-  max-width: 300px; /* Adjust max-width as needed */
-  box-sizing: border-box;
+#chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
 }
 
-button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-  input[type="text"], button, input[type="file"] {
-    max-width: 100%;
-  }
-}
+/* Other styling as needed */

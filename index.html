@@ -3,28 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equation Solver</title>
+  <title>ChatGPT Integration</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Equation Solver</h1>
+    <h1>ChatGPT Chatbot</h1>
   </header>
-  <main>
-    <div class="equation-input">
-      <label for="equation">Enter your equation:</label>
-      <input type="text" id="equation" placeholder="e.g., 2x + 3 = 7">
-      <button onclick="solveEquation()">Solve</button>
+  <main id="chat-container">
+    <div id="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask a question...">
+      <button onclick="sendMessage()">Send</button>
     </div>
-    <div id="solution-container" class="solution-container">
-      <!-- Solutions will be displayed here -->
-    </div>
-    <input type="file" id="file-input" accept="image/*" capture="camera">
-    <button onclick="captureAndSolve()">Upload File (Camera)</button>
   </main>
-  <footer>
-    <p>&copy; 2024 Equation Solver</p>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
